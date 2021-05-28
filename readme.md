@@ -1,19 +1,26 @@
+Translation types
+Text translation
+Source text
+### QBittorrent v4.3.0.1 Nèizhuāng rclone shìjì hùlián bǎn nèi fēng shàngchuán jiǎoběn [shàngchuán jiǎoběn láiyuán](https://Www.Hostloc.Com/thread-612238-1-1.Html) loc dà lǎo niú bī!! Yùnxíng docker ``` docker run --name qbittorrent -d\ -p 6881:6881\ -P 6881:6881/Udp\ -p 8080:8080\ -V/root/qbittorrent/config:/Config\ -v/root/qbittorrent/downloads:/Downloads\ -v/root/qbittorrent/upload:/Upload\ --restart=always\ /benchao/qbittorrent-rclone:V1.4 ``` Docker zhōng de-v yìngshè dìzhǐ kěyǐ zìxíng xiūgǎi qBittorrent v4.2.5 ``` Docker run --name qbittorrent -d\ -p 6881:6881\ -P 6881:6881/Udp\ -p 8080:8080\ -V/root/qbittorrent/config:/Config\ -v/root/qbittorrent/downloads:/Downloads\ -v/root/qbittorrent/upload:/Upload\ --restart=always\ /benchao/qbittorrent-rclone:V1.3 ``` ## Rclone pèizhì zài config wénjiàn jiā xià xīnjiàn wénjiàn jiā**rclone**, fàng rù zìjǐ de**rclone.Conf**pèizhì wénjiàn ## zìdòng shàngchuán wénjiàn pèizhì biānjí upload wénjiàn jiā xià de qb_auto.Sh wénjiàn![]() ``` The_dir="${save_dir//\/downloads\//}" #rúguǒ nǐ xiūgǎile zhǔ xiàzài dìzhǐ, qǐng xiūgǎi zhèlǐ qb_version="4.3.0.1" #Qb bǎnběn qb_username="admin" #qb yònghù míng qb_password="adminadmin" #qb mìmǎ qb_web_url="http://Localhost:8080" #Qb de web dìzhǐ leeching_mode="true" #zhège bùyòng guǎn log_dir="/config/log" #xūyào dǎyìn de rìzhì dìzhǐ rclone_dest="yun" #xūyào shàngchuán de rclone qūdòngqì míngchēng rclone_parallel="32" #rclone shàngchuán xiànchéng auto_del_flag="test" #shàngchuán wánchéng hòu jiāng zhǒngzǐ gǎibiàn de fēnlèi míng ``` mòrèn shàngchuán hòu bù shānchú wénjiàn, rúguǒ xūyào shānchú, jiāng sh zhōng suǒyǒu de**#qb_del**de#hào shānchú ## qb mìnglìng pèizhì shèzhì**Torrent wánchéng shí yùnxíng wàibù chéngxù** ```shell bash/upload/qb_auto.Sh "%N" "%F" "%R" "%D" "%C" "%Z" "%I" ``` ## xiàoguǒ zhǎnshì ![Qb pèizhì](https://Github.Com/666wcy/qbittorent_rclone_upload/raw/main/qb.Png) ![Shàngchuán rìzhì](https://Github.Com/666wcy/qbittorent_rclone_upload/raw/main/log.Png) ![Shàngchuán nèiróng](https://Github.Com/666wcy/qbittorent_rclone_upload/raw/main/upload.Png)
+Show more
+1593 / 5000
+Translation results
 ### qBittorrent v4.3.0.1
 
 
 
-内装rclone世纪互联版
+Built-in rclone 21Vianet version
 
-内封上传脚本
+Inner upload script
 
-[上传脚本来源](https://www.hostloc.com/thread-612238-1-1.html )
+[Upload script source](https://www.hostloc.com/thread-612238-1-1.html)
 
-loc大佬牛逼!!
+The loc boss is awesome!!
 
-运行docker
+Run docker
 
 ```
-docker run  --name qbittorrent -d \
+docker run --name qbittorrent -d \
 -p 6881:6881 \
 -p 6881:6881/udp \
 -p 8080:8080 \
@@ -24,14 +31,14 @@ docker run  --name qbittorrent -d \
 /benchao/qbittorrent-rclone:v1.4
 ```
 
-docker中的-v映射地址可以自行修改
+The -v mapping address in docker can be modified by itself
 
 
 
 qBittorrent v4.2.5
 
 ```
-docker run  --name qbittorrent -d \
+docker run --name qbittorrent -d \
 -p 6881:6881 \
 -p 6881:6881/udp \
 -p 8080:8080 \
@@ -44,51 +51,54 @@ docker run  --name qbittorrent -d \
 
 
 
-## rclone配置
+## rclone configuration
 
-在config文件夹下新建文件夹**rclone**，放入自己的**rclone.conf**配置文件
+Create a new folder **rclone** under the config folder, and put your own **rclone.conf** configuration file
 
 
 
-## 自动上传文件配置
+## Automatic upload file configuration
 
-编辑upload文件夹下的qb_auto.sh文件![]()
+Edit the qb_auto.sh file in the upload folder! []()
 
 ```
-the_dir="${save_dir//\/downloads\//}"	#如果你修改了主下载地址，请修改这里
+the_dir="${save_dir//\/downloads\//}" #If you modify the main download address, please modify here
 
-qb_version="4.3.0.1"	#qb版本
-qb_username="admin"		#qb用户名
-qb_password="adminadmin"	#qb密码
-qb_web_url="http://localhost:8080"	#qb的web地址
-leeching_mode="true"	#这个不用管
-log_dir="/config/log"	#需要打印的日志地址
-rclone_dest="yun"		#需要上传的rclone驱动器名称
-rclone_parallel="32"	#rclone上传线程
-auto_del_flag="test"	#上传完成后将种子改变的分类名
+qb_version="4.3.0.1" #qb version
+qb_username="admin" #qbUsername
+qb_password="adminadmin" #qbPASSWORD
+qb_web_url="http://localhost:8080" #qb's web address
+leeching_mode="true" #Don't worry about this
+log_dir="/config/log" #Log address to be printed
+rclone_dest="yun" #The name of the rclone drive to be uploaded
+rclone_parallel="32" #rclone upload thread
+auto_del_flag="test" #Change the category name of the seed after the upload is complete
 ```
 
-默认上传后不删除文件，如果需要删除，将sh中所有的**#qb_del**的#号删除
+By default, the file is not deleted after uploading. If you need to delete it, delete all the # signs of **#qb_del** in sh
 
 
 
-## qb命令配置
+## qb command configuration
 
-设置 **Torrent 完成时运行外部程序**
+Settings **Run external program when Torrent is complete**
 
 ```shell
-bash /upload/qb_auto.sh  "%N" "%F" "%R" "%D" "%C" "%Z" "%I"
+bash /upload/qb_auto.sh "%N" "%F" "%R" "%D" "%C" "%Z" "%I"
 ```
 
 
 
 
 
-## 效果展示
+## Show results
 
-![qb配置](https://github.com/666wcy/qbittorent_rclone_upload/raw/main/qb.png)
+![qb configuration](https://github.com/666wcy/qbittorent_rclone_upload/raw/main/qb.png)
 
-![上传日志](https://github.com/666wcy/qbittorent_rclone_upload/raw/main/log.png)
+![Upload log](https://github.com/666wcy/qbittorent_rclone_upload/raw/main/log.png)
 
-![上传内容](https://github.com/666wcy/qbittorent_rclone_upload/raw/main/upload.png)
-
+![Upload content](https://github.com/666wcy/qbittorent_rclone_upload/raw/main/upload.png) 
+More about this source text
+Source text required for additional translation information
+Send feedback
+Side panels
